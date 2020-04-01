@@ -83,7 +83,7 @@ if ischar(bootside)
 	bootside = { bootside };
 end
 for index = 1:length(bootside)
-	if ~strcmpi(bootside, 'both') && ~strcmpi(bootside, 'upper')
+	if ~strcmpi(bootside(index), 'both') && ~strcmpi(bootside(index), 'upper')
 		error('Bootside must be either ''both'' or ''upper''');
 	end
 end;	

@@ -374,12 +374,12 @@ for index = 1:size(arg2(:),1)
 		end
         allobj(countobj:countobj+length(tmpobj)-1) = tmpobj;
         countobj = countobj+length(tmpobj);
-		drawnow;
 		axis square;
     else
     axis off
     end
 end
+drawnow();
 
 % Draw colorbar
 if colorbar_switch

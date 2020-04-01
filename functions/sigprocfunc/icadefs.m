@@ -161,6 +161,7 @@ if ~isdeployed
     ICABINARY = fullfile(eeglab_p, 'functions', 'supportfiles', 'ica_linux'); 
     tmpComputer = computer;
     if strcmpi(tmpComputer(1:3), 'MAC')
+        % ICABINARY = '/Volumes/Data/Drive/MATLAB/functions/supportfiles/ica_osx_intel_64';
         ICABINARY = fullfile(eeglab_p, 'functions', 'supportfiles', 'ica_osx_intel_64');
         clear tmpComputer
     end

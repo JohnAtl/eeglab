@@ -1589,8 +1589,8 @@ switch lower(g.plotersp)
                 if size(PP,1) == size(Pboot,1) && size(PP,2) == size(Pboot,2)
                     PP(find(PP > Pboot(:,:,1) & (PP < Pboot(:,:,2)))) = baseval;
                     Pboot = squeeze(mean(Pboot,2));
-                    if
-                        size(Pboot,2) == 1, Pboot = Pboot';
+                    if size(Pboot,2) == 1
+                        Pboot = Pboot';
                     end
                 else
                     PP(find((PP > repmat(Pboot(:,1),[1 length(times)])) ...

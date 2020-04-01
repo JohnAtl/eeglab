@@ -831,7 +831,7 @@ if ismatlab
     spec_m = uimenu( plot_m, 'Label', 'Time-frequency transforms', 'Separator', 'on', 'userdata', ondata);
     uimenu( spec_m, 'Label', 'Channel time-frequency'             , 'Accelerator', 't'    , 'CallBack', cb_timef1);
     uimenu( spec_m, 'Label', 'Channel cross-coherence'                , 'CallBack', cb_crossf1);
-    uimenu( spec_m, 'Label', 'Component time-frequency'               , 'CallBack', cb_timef2,'Separator', 'on');     
+    uimenu( spec_m, 'Label', 'Component time-frequency'           , 'Accelerator', 'c'    , 'CallBack', cb_timef2,'Separator', 'on');     
     uimenu( spec_m, 'Label', 'Component cross-coherence'              , 'CallBack', cb_crossf2);
 
     uimenu( std_m,  'Label', 'Edit study info'                        , 'userdata', onstudy, 'CallBack', cb_study3);
